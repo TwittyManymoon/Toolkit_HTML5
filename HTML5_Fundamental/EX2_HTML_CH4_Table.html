@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<!-- KEY:
+1. <caption></caption>
+2. <table></table>
+3. <tr></tr>
+4. <td></td>
+5. <td rowspan="no.of cell"></td> 
+6. <td colspan="no.of cell"></td> -->
+
+<head>
+    <title>Tables</title>
+    <meta charset="UTF-8">
+
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table 1 : Basic -->
+
+    Table 1 : Basic
+
+    <!-- Table -->
+    <table>
+        <!-- Row 1 -->
+        <tr>
+            <td>|R1 C1|</td> <!-- Row 1 Column 1-->
+            <td>|R1 C2|</td> <!-- Row 1 Column 2-->
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td>|R2 C1|</td> <!-- Row 2 Column 1-->
+            <td>|R2 C2|</td> <!-- Row 2 Column 1-->
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <!-- Table 2 : Basic with table name <caption> -->
+
+    Table 2 : Basic with table name
+
+    <!-- Table -->
+    <table>
+        <!-- Caption -->
+        <caption>ing table</caption>
+        <!-- Row 1 -->
+        <tr>
+            <td>|R1 C1|</td> <!-- Row 1 Column 1-->
+            <td>|R1 C2|</td> <!-- Row 1 Column 2-->
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td>|R2 C1|</td> <!-- Row 2 Column 1-->
+            <td>|R2 C2|</td> <!-- Row 2 Column 1-->
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    Table 3 : Complex table - header, body, and footer of table are divided
+    <!-- Table -->
+    <table>
+        <!-- Table name = caption -->
+        <caption>ing table lvl.2</caption>
+
+        <!-- table head -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <td>Twitty</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>Manymoon</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+
+        <!-- table foot -->
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>41</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br />
+    <br />
+
+    Table 4.1 : Complex table 2 - cell merged!
+    <br />
+    <!-- Table -->
+    <table>
+        <caption>Merged Cells Table 1</caption>
+        <!-- Horizontal Merge = Cell -> Row -->
+        <tr>
+            <td colspan="3">data</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    Table 4.2 : Complex table 2 - cell merged!
+    <br />
+    <!-- Table -->
+    <table>
+        <caption>Merged Cells Table 2</caption>
+        <!-- Horizontal Merge = Cell -> Column -->
+        <tr>
+            <td rowspan="3">data</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- KEY:
+1. General Form
+    1.1 form
+    <form method="..." action="..." name="..."></form>
+
+        method = data submission - GET or POST
+        action = where the data is sent to ---- (server); e.g. .php
+        name = name of form
+    
+    1.2 general input
+    <input type="..." name="..." value="..." />
+
+2. <input type="text" ... /> = Input as Textfield 
+3. <input type="password" ... /> = Input as Password
+********************************************************************************
+4. <textarea rows="..." columns="..." name="..."> </textarea> = Input as textarea 
+********************************************************************************
+5.  <input type="radio" name="[1]" value="...">
+    <input type="radio" name="[1]" value="...">   = Input as radio button, one can be selected only.
+6.  <input type="checkbox" name="..." value="...">
+    <input type="checkbox" name="..." value="...">   = Input as checkbox, many can be selected.
+********************************************************************************
+7.  <select name="..."">
+        <option value="...">...</option>
+        <option value="...">...</option>
+    <select>    =   Input as dropdown list
+********************************************************************************
+8.  ...
+    <input type="reset" value="cleared">    = Reset input value
+9.  Just submit the data -->
+
+
+<head>
+    <title>Forms</title>
+    <meta charset="UTF-8">
+</head>
+<!-- 
+1.) General Form
+
+<form method="POST" action="text.php" name="Boboform"></form>
+
+method = data submission - GET or POST
+action = where the data is sent
+name = name of form -->
+
+<body>
+
+    <form>
+        <!-- 2.) Input as Textfield -->
+        Firstname: <input type="text" name="firstName" /><br />
+        Lastname: <input type="text" name="lastName" /><br />
+
+
+        <!-- 3.) Input as Password -->
+        Password: <input type="password" name="password" /><br />
+
+
+        <!-- 4.) Input as Textarea  -->
+        Address
+        <br />
+        <textarea rows="5" cols="20" name="details">
+
+        </textarea>
+    </form>
+
+    <form>
+        <!-- 5.) Input as Radio Button -->
+        <input type="radio" name="sex" value="male" /> male
+        <input type="radio" name="sex" value="female" /> female
+        <input type="radio" name="sex" value="others" /> others
+    </form>
+
+    <form>
+        <!-- 6.) Input as Checkbox -->
+        <input type="checkbox" name="ride_1" value="car" />car <br />
+        <input type="checkbox" name="ride_2" value="bike" />bikde<br />
+        <input type="checkbox" name="ride_3" value="submarine" />submarine<br />
+    </form>
+
+    <form>
+        <!-- 7. Input as Dropdown List -->
+        <select name="product">
+            <option value="iPad">iPad Pro</option>
+            <option value="iPhone">iPhone X</option>
+            <option value="macbook">Macbook Pro</option>
+        </select>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <form>
+        <!-- 8.) Reset all Input -->
+        User:
+        <select name="users">
+            <option value="guest">guest</option>
+            <option value="admin">admin</option>
+        </select>
+        <br />
+        Password:
+        <input type="password" name="pwd"><br />
+        <input type="reset" value="cleared"><br />
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- 9.) Submit data -->
+
+    <form name="myData" action="test.php" method="GET">
+        User:
+        <select name="users">
+            <option value="guest">newbie</option>
+            <option value="admin">master</option>
+        </select>
+        <br />
+        Password:
+        <input type="password" name="pwd"><br />
+        <input type="reset" value="cleared!"><br />
+        <input type="submit" value="submitted"><br />
+    </form>
+
+
+</body>
+
+</html>

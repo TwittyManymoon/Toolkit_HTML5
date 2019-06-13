@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<!-- KEY: These are some new input in HTML5, which decreases workload in Javascript part -->
+
+<head>
+    <title>Form HTML5</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <!-- 1.) input type = search -->
+    <div>
+        Find what you want <br />
+        <form id="search" method="POST">
+            <input type="search" name="nsearch" id="mysearch" placeholder="I love you">
+            <input type="submit" value="search">
+        </form>
+    </div>
+
+    <!-- 2.) input type = email -->
+    <div>
+        Enter your email <br />
+        <form id="searchEmail" method="POST">
+            <input type="email" name="myMail" id="mysearchMail">
+            <input type="submit" value="search">
+        </form>
+    </div>
+
+    <!-- 3.) input type = url -->
+    <div>
+        Enter your url <br />
+        <form id="searchUrl">
+            <input type="url" name="myUrl" id="mysearchUrl"> <!-- https:// is required-->
+            <input type="submit" value="search">
+        </form>
+    </div>
+
+    <!-- 4.) input type = number -->
+    <div>
+        Enter your number <br />
+        <form id="searchNumber">
+            <input type="number" name="myNum" id="mysearchNumber">
+            <input type="submit" value="search">
+        </form>
+    </div>
+
+    <!-- 4.1) input type = number ; min 0 and max 10-->
+    <div>
+        Enter your number (min = 0, max = 10)<br />
+        <form id="searchNumberLimit">
+            <input type="number" name="myNumLim" id="mysearchNumberLimit" min="0" max="10" placeholder="5">
+            <input type="submit" value="search">
+        </form>
+    </div>
+    <!-- 5.) input type = range -->
+    <div>
+        <br />Select your satisfication <br />
+        <form id="searchLim">
+            <label for="myInput">scroll your mouse</label>
+            <input type="range" name="myRange" id="mysearchRange" min="0" max="5">
+            <input type="submit" value="send">
+        </form>
+    </div>
+    <!-- 6.) input type = telephone -->
+    <div>
+        <br /> Enter your phone number <br />
+        <form id="searchPhone">
+            <input type="tel" id="myTelnum" pattern="[0-9]{10}"> <!-- number 0 to 9, 10 units-->
+            <input type="submit" value="send">
+        </form>
+    </div>
+    <!-- 7.) input type = color -->
+    <div>
+        <br />Select shirt color <br />
+        <form id="searchColor">
+            <input type="color" name="myColor" id="mysearchColor">
+            <input type="submit" value="send">
+        </form>
+    </div>
+    <!-- 8.) input type = datetime -->
+    <div>
+        <br />Select DateTime<br />
+        <form id="myDateTime">
+            <input type="date" name="myDateTime" id="mysearchDateTime">
+            <input type="submit" value="send">
+        </form>
+    </div>
+
+</body>
+
+</html>

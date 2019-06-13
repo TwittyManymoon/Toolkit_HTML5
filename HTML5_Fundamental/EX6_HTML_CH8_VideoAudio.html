@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<!-- KEY: there are 3 main video formats
+    1. H.264 (mp4)
+    2. WebM
+    3. Ogg Theora
+
+    there should be all supported video format in video tag, in case of unsupport format,
+    which depends on different browsers
+
+    if the first format does not work, the next one will be show
+    if all of them are unavailable, 'Your browser does not support video tag' will be shown
+
+    *************
+    Audio doesn't have property like Video (e.g. width, height)s
+-->
+
+<head>
+    <title>Video Audio</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h3>Video Test</h3>
+    <video controls="controls" preload="auto" autoplay loop width="1024" height="768">
+        <source src="_comp/small.mp4" type="video/mp4" />
+        <source src="_comp/small.ogv" type="video/ogv" />
+        <source src="_comp/small.webm" type="video/webm" />
+        Your browser does not support video tag
+    </video>
+
+    <h3>Audio Test</h3>
+    <audio controls="controls">
+        <source src="_comp/horse.ogv" type="audio/mp3" />
+    </audio>
+
+</body>
+
+</html>

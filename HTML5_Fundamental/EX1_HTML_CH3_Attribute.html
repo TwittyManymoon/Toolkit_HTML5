@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- 1.) HTML5 Declaration-->
+<html>
+<!-- Web browser gonna decode HTML only this html section-->
+
+<head>
+    <title>Attributes</title> <!-- 2.) Title (in Tab)-->
+    <meta charset="UTF-8"> <!-- 3.) set the encoding -->
+</head>
+
+<!-- KEY:
+1. <!DOCTYPE html>
+2. <title></title>
+3. <meta charset="UTF-8">
+4. void VS raw text VS nested element
+5. <p></p>
+6. <p attribute=""></p>
+7. <span></span> = inline   
+8. <em></em>
+9. <strong></strong>
+10. <div></div>
+11. block VS inline
+12. parent VS child
+13. <h1 h2 h3 h4 h5 h6>
+14. <a href="www.google.com">www.google.com</a>
+15. <img src="panda.jpg">
+16. <ol></ol>
+17. <ul></ul> -->
+
+<body>
+
+    <!-- 4.) element is unit in HTML, represented by tag '<>'  -->
+
+    <!-- There are 3 types of elements, by pattern
+    4.1. Void Elements - only one tag is enough; e.g. <br />, <hr />
+    4.2. Raw Text Elements - element with open tag, text, and close tag; e.g. <h1></h1>
+    4.3. Nested Elements - element with open tag, other elements, and closed tag e.g,
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol> -->
+
+    <!-- 4.1 Void Elements -->
+    Sample of Void Elements - line
+    <hr />
+
+    <!-- 4.2 Raw Text Elements-->
+    <h1>Sample of Raw Text Element - h1</h1>
+
+    <!-- 4.3 Nested Elements -->
+    Sample of Nested Element - order list
+    <ol>
+        <li>Nested 1</li>
+        <li>Nested 2</li>
+        <li>Nested 3</li>
+    </ol>
+
+    <!-- 5.) <p></p> is paragraph, fullspace in horizontal -->
+    <p>
+        This is paragraph, fullspace in horizontal
+    </p>
+
+    <!-- 6.) Attribute is characteristics of element -->
+
+    <!-- e.g. -->
+    <p id="paragraphID">
+        This is paragraph, with attribute id = paragraphID
+    </p>
+    <p class="paragraphClass">
+        This is paragraph, with attribute class = paragraphClass
+    </p>
+
+    <!-- 7.) <span></span> is used to show text in one line-->
+    <p>
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+    </p>
+
+    <!-- 8.) <em></em> inclines the text -->
+    <em>Inclined Text</em>
+
+    <!-- 9.) <strong></strong> bolds the text-->
+    <strong>Bolded Text</strong>
+
+    <!-- 10.) <div></div> divides the section -->
+    <div>
+        <p>Div 1</p>
+    </div>
+
+    <div>
+        <p>Div 2</p>
+    </div>
+
+    <!-- 10.1) div vs p -->
+    <div>
+        <p>Paragraph 1</p>
+        <div style="color:white; background-color: black">
+            <p>Paragrph 2.1</p>
+            <p>Paragrph 2.2</p>
+        </div>
+    </div>
+
+    <!-- 11.) Comment -->
+
+    <!-- There are 2 types of elements, by display
+    11.1 Block Elements - when defined, element show in new line, full 100% width of above element; e.g. <div></div>
+    11.2 Inline Elements - when defined, element show in same line, necessary width; e.g. <span></span> -->
+
+    <!-- 11.1) Block Elements -->
+    <div>
+        Block 1
+    </div>
+    <div>
+        Block 2
+    </div>
+
+    <!-- 11.2) Inline Elements-->
+    <span>Span 1</span>
+    <span>Span 2</span>
+
+    <!-- 12.) Parent Element vs Child Element -->
+
+    <!-- Outer element = Parent
+         Inner element = Child -->
+
+    <!-- parent -->
+    <div>
+        <!-- child -->
+        <p>child 1</p>
+        <p>child 2</p>
+    </div>
+
+    <!-- 13.) Content priority-->
+    <h1>Most priority</h1>
+    <h2>2nd priority</h2>
+    <h3>3rd priority</h3>
+    <h4>4th priority</h4>
+    <h5>5th priority</h5>
+    <h6>6th priority</h6>
+
+    <!-- 14.) <a> is hyperlink -->
+    <a href="www.google.com">www.google.com</a>
+
+    <!-- 15.) <img> is image -->
+    <img src="./_comp/panda.jpg" />
+
+    <!-- 16.) <ol> is order list = number list -->
+    <ol>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+
+    <!-- 16.1) <ol> variation - Roman Capitalized -->
+    <ol type="I">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+
+    <!-- 17.) <ul> us unorder list = non-number list-->
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+    <!-- 17.1) <ul> variation - square -->
+    <ul type="square">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+
+
+</body>
+
+</html>

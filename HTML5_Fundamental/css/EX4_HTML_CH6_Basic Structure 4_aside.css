@@ -1,0 +1,25 @@
+/* set bg color of header to be grey */
+header{
+    background-color: gray;
+}
+/* float aside to right, width 20% and bg color to grey */
+aside{
+    float: right;
+    width: 20%;
+    background-color: grey;
+}
+/* set bullet point to invisible */
+aside li{
+    list-style: none;
+}
+/* set border to aside*/
+header, aside{
+outline-color: black;
+outline-style: solid;
+outline-width: 1px;
+}
+/* set main position */
+#main{
+    width: 800px;
+    margin:auto;
+}

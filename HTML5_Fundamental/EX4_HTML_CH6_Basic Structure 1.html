@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic HTML Structure 1</title>
+    <meta charset="UTF-8" />
+    <!-- CSS -->
+    <style>
+        /* select header and footer bg to be grey */
+        header,
+        footer {
+            background-color: grey;
+        }
+
+        /* lift aside to left, width 20%, far from right 2%, and bg color = silver */
+        aside {
+            float: left;
+            width: 20%;
+            margin-right: 2%;
+            background-color: silver;
+        }
+
+        /* list in aside show no bullet */
+        aside li {
+            list-style: none;
+        }
+
+        /* lift article to right, width 78%, and bg color = silver*/
+        article {
+            float: right;
+            width: 78%;
+            background-color: silver;
+        }
+
+        /* clear value, far from above 15 px*/
+        footer {
+            clear: both;
+            position: relative;
+            top: 15px;
+        }
+
+        /* set header, footer, and section width = 960 px and align to center*/
+        header,
+        footer,
+        section {
+            width: 960px;
+            margin: auto;
+        }
+
+        /* set border as solid black */
+        header,
+        footer,
+        aside,
+        article {
+            outline-color: black;
+            outline-style: solid;
+            outline-width: 1px
+        }
+
+        /* set body color as silver */
+        body {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h3>This is header</h3>
+        <p>My Website</p>
+    </header>
+    <!-- Section -->
+    <section>
+        <h1 hidden="true">Main Section</h1>
+        <!-- Aside -->
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+            </ul>
+        </aside>
+
+        <article>
+            <h2>My Article 1</h2>
+            <p>Hello World</p>
+        </article>
+
+        <article>
+            <h2>My Article 2</h2>
+            <p>Hello World</p>
+        </article>
+
+    </section>
+    <!-- Footer -->
+    <footer>
+        <h3>This is footer</h3>
+        <p>Copy Right Here</p>
+    </footer>
+</body>
+
+
+
+</html>
